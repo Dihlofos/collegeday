@@ -7,7 +7,9 @@
 
   // Event Listeners
   modalOpen.forEach((openButton) => {
+    console.log("here?", openButton);
     openButton.addEventListener("click", () => {
+      console.log("click????");
       openModal();
     });
   });

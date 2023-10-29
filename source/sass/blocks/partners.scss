@@ -1,6 +1,6 @@
 .partners {
   position: relative;
-  padding: 8.8rem 0 8rem;
+  padding: 8.8rem 0 12rem;
 
   .container {
     position: relative;
@@ -12,6 +12,7 @@
     top: -16rem;
     left: -34rem;
     z-index: 3;
+    opacity: 0.5;
 
     @media (max-width: $mobile) {
       top: 0rem;

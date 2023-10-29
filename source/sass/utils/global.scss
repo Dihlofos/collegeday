@@ -75,3 +75,26 @@ img {
 }
 
 
+.bg {
+  max-width: initial;
+  position: absolute;
+  top: -31%;
+  left: -107%;
+  z-index: 1;
+  width: 348%;
+
+  @media (max-width: $tablet) {
+    width: 230%;
+    top: -8%;
+    left: -48%;
+  }
+
+  @media (max-width: $mobile) {
+    width: 365%;
+    top: -5%;
+    left: -103%;
+  }
+
+}
+
+
