@@ -13,6 +13,7 @@
   background-color: #fff;
   color: $black;
   padding: 4rem;
+  overflow: auto;
 
   @media (max-width: $mobile) {
     padding: 5rem;
@@ -28,7 +29,7 @@
     right: 5rem;
     cursor: pointer;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       top: 2rem;
       right: 2rem;
 
