@@ -38,6 +38,15 @@
 
     <div style="overflow: hidden">
       <main style="overflow: hidden">
+        <div class="modal js-modal" style="display: none">
+          <div class="modal__close js-modal-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="71" height="71" viewBox="0 0 71 71" fill="none">
+              <rect x="51.5234" y="16.1687" width="4.26829" height="50" transform="rotate(45 51.5234 16.1687)" fill="#100F0F"/>
+              <rect x="54.543" y="51.5238" width="4.26829" height="50" transform="rotate(135 54.543 51.5238)" fill="#100F0F"/>
+            </svg>
+          </div>
+          <div id="embeddedApp" api-key="ba9176b40e8a280346a8cce0671b3b9e31cbef635bdeca85732dd5582f6896f9d146d6d4bf2cfdd00129aefc17be0f88" force-lng-code="ru" server="faserver.accreditation.ru"></div>
+        </div>
         <button class="nav__mobile-toggler js-nav-toggler">
           <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="29" cy="29" r="29" fill="#713CD3"/>
@@ -82,7 +91,7 @@
                   >
                 </li>
               </ul>
-              <button class="nav__button button button--purple">Получить билет</button>
+              <button class="nav__button button button--purple js-modal-open">Получить билет</button>
             </div>
           </div>
         </nav>
@@ -123,7 +132,7 @@
                   </ul>
                 </nav>
               </div>
-              <button class="header__button button">Получить билет</button>
+              <button class="header__button button js-modal-open">Получить билет</button>
             </div>
           </div>
         </header>
@@ -180,7 +189,7 @@
                   <div class="about__main-subtext">
                     Приходи, чтобы поймать музыкальное настроение и&nbsp;стать частью комьюнити, за&nbsp;которым будущее!
                   </div>
-                  <button class="button button--purple about__button">Получить билет</button>
+                  <button class="button button--purple about__button js-modal-open">Получить билет</button>
                   <div class="about__main-button-text">Количество билетов ограничено</div>
                 </div>
               </div>
@@ -301,7 +310,7 @@
                 </div>
               </div>
               <div class="map__image">
-                <img src="img/map/map.jpg" alt="" width="1180" height="504">
+                <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/vk_stadium/179299462955/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">VK Stadium</a><a href="https://yandex.ru/maps/213/moscow/category/concert_hall/184105902/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Концертный зал в Москве</a><iframe src="https://yandex.ru/map-widget/v1/org/vk_stadium/179299462955/?ll=37.519388%2C55.806335&utm_source=share&z=14" width="1180" height="530" frameborder="1" allowfullscreen="true" style="position:relative; height: 100%; width: 100%;"></iframe></div>
               </div>
             </div>
           </section>
@@ -362,5 +371,6 @@
     </div>
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript" src="https://app.accreditation.ru/embedded-app.js"></script>
   </body>
 </html>
