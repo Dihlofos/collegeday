@@ -1,25 +1,56 @@
 .stars {
-  position: relative;
   padding: 7.5rem 0 6.5rem;
+
+  @media (max-width: $mobile) {
+    padding: 7.5rem 0 0;
+  }
+
+  .container {
+    position: relative;
+  }
 
   &__left-decor {
     position: absolute;
-    top: 16.5rem;
-    left: -18.6rem;
+    top: 9rem;
+    left: -30.8rem;
     z-index: 3;
+
+    @media (max-width: $tablet) {
+      left: -20rem;
+    }
+
+    @media (max-width: $mobile) {
+      top: -8rem;
+      width: 37.5rem;
+    }
+  }
+
+  &__right-gradient {
+    position: absolute;
+    top: -127rem;
+    right: -190rem;
+    z-index: 2;
   }
 
   &__right-decor {
     position: absolute;
-    top: 13.4rem;
-    right: -12rem;
+    top: 6rem;
+    right: -24.5rem;
     z-index: 3;
+
+    @media (max-width: $tablet) {
+      right: -20rem;
+    }
   }
 
   &__header {
     position: relative;
     display: flex;
     z-index: 3;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
   }
 
   &__title {
@@ -39,10 +70,19 @@
       display: flex;
       gap: 1rem
     }
+
+    @media (max-width: $tablet) {
+      margin-right: 0;
+    }
   }
 
   &__descr {
     margin: 0 0 2.3rem;
+  }
+
+  .slider {
+    position: relative;
+    z-index: 5;
   }
 
 

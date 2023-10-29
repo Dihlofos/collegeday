@@ -8,6 +8,9 @@
     align-items: center;
     justify-content: center;
     z-index: 1;
+    border-radius: 20px;
+    overflow: hidden;
+
 
     &--headliner {
       z-index: 200;
@@ -59,22 +62,8 @@
   .swiper-slide {
     display: flex;
     justify-content: center;
-
-    &--last {
-      width: 1px;
-
-      @media (max-width: $tablet) {
-        display: block;
-        width: 20px;
-      }
-    }
   }
 
-  .swiper-wrapper {
-    @media (max-width: $tablet) {
-      margin-left: 20px;
-    }
-  }
 
   &__headliner {
     position: absolute;

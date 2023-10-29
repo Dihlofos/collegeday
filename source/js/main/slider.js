@@ -15,14 +15,16 @@
     },
     breakpoints: {
       320: {
-        slidesPerView: 'auto',
+        slidesPerView: "auto",
         loop: false,
+        slidesPerView: 1,
         spaceBetween: 13,
       },
 
       738: {
-        slidesPerView: 'auto',
+        slidesPerView: "auto",
         loop: false,
+        slidesPerView: 3,
         spaceBetween: 13,
       },
 
@@ -32,5 +34,4 @@
       },
     },
   });
-
 })();

@@ -8,6 +8,10 @@ html {
   @media (max-width: $laptop) {
     @include font(7px, 7px, 400);
   }
+
+  @media (max-width: $tablet) {
+    @include font(10px, 10px, 400);
+  }
 }
 
 body {
@@ -33,6 +37,10 @@ body {
   @media (min-resolution: $extra) {
     // шаблон для фонового изображения на экранах с повышенной плотностью пикселей
   }
+}
+
+.gradient {
+  max-width: initial !important;
 }
 
 button {

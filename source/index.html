@@ -40,7 +40,7 @@
       <main style="overflow: hidden">
         <button class="nav__mobile-toggler js-nav-toggler">
           <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="29" cy="29" r="29" fill="#0080C5"/>
+            <circle cx="29" cy="29" r="29" fill="#713CD3"/>
             <line x1="17" y1="23" x2="41" y2="23" stroke="white" stroke-width="2"/>
             <line x1="17" y1="29" x2="41" y2="29" stroke="white" stroke-width="2"/>
             <line x1="17" y1="35" x2="41" y2="35" stroke="white" stroke-width="2"/>
@@ -51,13 +51,15 @@
           <div class="nav__wrapper">
             <button class="nav__close js-nav-close ">
               <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="29" cy="29" r="29" fill="#0080C5"/>
+                <circle cx="29" cy="29" r="29" fill="#713CD3"/>
                 <path d="M35.5 22.5L22.5 35.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M22.5 22.5L35.5 35.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </button>
             <div class="nav__top">
-              <img class="nav__logo" src="img/logo.svg" width="169" height="72" alt="Логотип московского урбанистического форума" />
+              <a href="">
+                <img class="header__logo" src="img/dep-black.png" width="152" height="55" alt="" />
+              </a>
               <ul class="nav__list">
                 <li class="nav__item">
                   <a class="nav__link js-scroll" data-scroll href="#about"
@@ -80,7 +82,7 @@
                   >
                 </li>
               </ul>
-              <button class="nav__button button">Получить билет</button>
+              <button class="nav__button button button--purple">Получить билет</button>
             </div>
           </div>
         </nav>
@@ -92,7 +94,7 @@
             <div class="header__wrapper">
               <div class="header__logos">
                 <a href="">
-                  <img class="header__logo" src="img/dep.png" width="152" height="55" alt="Логотип московского урбанистического форума" />
+                  <img class="header__logo" src="img/dep.png" width="152" height="55" alt="" />
                 </a>
               </div>
               <div class="header__nav">
@@ -128,13 +130,13 @@
         <div class="main">
           <section class="hero" id="hero">
             <div class="container">
-              <img class="hero__left-gradient" src="img/hero/hero-left-gradient.svg" width="3126" height="3126" />
-              <img class="hero__right-gradient" src="img/hero/hero-right-gradient.svg" width="3126" height="3126" />
+              <img class="hero__left-gradient  gradient" src="img/purple-gradient.svg" width="3126" height="3126" />
+              <img class="hero__right-gradient  gradient" src="img/blue-gradient.svg" width="3126" height="3126" />
               <img class="hero__left-decor" src="img/hero/hero-left-decor.svg" width="1025" height="990" />
               <img class="hero__right-decor" src="img/hero/hero-right-decor.svg" width="407" height="107" />
               <div class="hero__top">
                 <div class="hero__tag">VK Stadium | 13 ноября 2023 г.</div>
-                <div class="hero__bubble">Количество билетов ограничено</div>
+                <div class="hero__bubble hero__bubble-desktop">Количество билетов ограничено</div>
                 <h1 class="hero__title">ДЕНЬ ПЕРВОКУРСНИКОВ КОЛЛЕДЖЕЙ</h1>
                 <div class="hero__descr">подведомственных Департаменту образования и&nbsp;науки города Москвы</div>
               </div>
@@ -146,6 +148,7 @@
                 <div class="hero__right">
                   <span class="hero__slogan">ТВОЯ ПРОФЕССИЯ — ТВОЙ ВЫБОР</span>
                   <div class="hero__timer">
+                    <div class="hero__bubble hero__bubble--mobile">Количество билетов ограничено</div>
                     <img class="hero__arrows" src="img/hero/right-arrows.svg" width="59" height="17" />
                     <div class="timer">
                       <span>До события осталось</span>
@@ -208,6 +211,7 @@
           </section>
           <section class="stars" id="stars">
             <div class="container">
+              <img class="stars__right-gradient gradient" src="img/purple-gradient.svg" width="3126" height="3126" />
               <img class="stars__left-decor" src="img/stars/stars-left-decor.svg" alt="" width="407" height="107">
               <img class="stars__right-decor" src="img/stars/stars-right-decor.svg" alt="" width="330" height="332" >
               <div class="stars__header">
@@ -272,6 +276,7 @@
           </section>
           <section class="map" id="map">
             <div class="container">
+              <img class="map__left-gradient gradient" src="img/blue-gradient.svg" width="3126" height="3126" />
               <div class="map__description">
                 <img class="map__decor" src="img/map/spark.svg" alt="" width="119" height="198">
                 <div class="map__left">

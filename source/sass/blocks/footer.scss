@@ -4,11 +4,23 @@
   padding: 0 2rem;
 
   &__wrapper {
+    position: relative;
     color: $black;
     padding: 5.8rem 0 4rem;
     background-color: $white;
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
+    z-index: 4;
+
+    @media (max-width: $mobile) {
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      padding: 2rem;
+
+      .container {
+        padding: 0;
+      }
+    }
   }
 
   &__top,
@@ -19,10 +31,19 @@
 
   &__top {
     margin: 0 0 6rem;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+    }
   }
 
   &__bottom {
     align-items: flex-end;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__title {
@@ -39,6 +60,10 @@
     .footer__link {
       margin: 0 0 3rem;
     }
+
+    @media (max-width: $tablet) {
+      width: auto;
+    }
   }
 
   &__common {
@@ -47,6 +72,10 @@
       font-weight: 600;
       line-height: 1.1;
       margin: 0 0 1.4rem;
+
+      @media (max-width: $mobile) {
+        font-size: 2rem;
+      }
     }
   }
 
@@ -61,6 +90,10 @@
     &:hover {
       color: $purple;
     }
+
+    @media (max-width: $mobile) {
+      font-size: 1.6rem;
+    }
   }
 
   &__subtitle {
@@ -68,12 +101,20 @@
     font-weight: 700;
     line-height: 1.1;
     margin: 2.8rem 0 3rem;
+
+    @media (max-width: $mobile) {
+      font-size: 2.2rem;
+      margin: 3rem 0 1rem;
+    }
   }
 
   &__info {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.4;
+    @media (max-width: $mobile) {
+      font-size: 1.4rem;
+    }
 
     p {
       margin: 0 0 1.5rem;
@@ -108,12 +149,14 @@
     line-height: 1.4;
     text-decoration: none;
     color: $black;
+
+    &:hover {
+      color: $purple;
+    }
+
+    @media (max-width: $mobile) {
+      display: block;
+      margin: 3rem 0 0;
+    }
   }
-
-
-
-
-
-
-
 }
