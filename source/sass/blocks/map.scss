@@ -1,0 +1,79 @@
+.map {
+  padding: 6.5rem 0 7rem;
+  &__description {
+    display: flex;
+    position: relative;
+    background-color: $white;
+    border-radius: 40px;
+    padding: 5rem 5rem 3rem;
+    z-index: 3;
+    overflow: hidden;
+    color: $black;
+  }
+
+  &__decor {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: normal;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  &__short {
+    font-size: 2rem;
+    max-width: 36.4rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 3.5rem;
+  }
+
+  &__right {
+    max-width: 34.1rem;
+    margin-right: 10rem;
+    padding-top: 3rem;
+  }
+
+  &__image {
+    margin-top: 2rem;
+    border-radius: 40px;
+    overflow: hidden;
+  }
+
+  &__blocks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__subtitle {
+    margin: 0 0 0.8rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  &__block {
+    margin: 0 0 3.6rem;
+
+    &:nth-child(2) {
+      max-width: 28rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+  }
+}

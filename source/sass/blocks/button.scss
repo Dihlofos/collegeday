@@ -1,0 +1,58 @@
+.button {
+    display: inline-flex;
+    width: 21.7rem;
+    height: 4.8rem;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+    color: $black;
+    padding: 2rem;
+    margin: 0;
+    border: none;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 0.2s color ease-in-out, 0.2s background-color ease-in-out, 0.2s border-color ease-in-out;
+
+    &:disabled {
+      width: 34rem;
+    }
+
+    &:not(:disabled) {
+      cursor: pointer;
+    }
+
+    &:hover,
+    &:active {
+      @media (min-width: $tablet) {
+        color: $white;
+
+        &:not(:disabled) {
+          background-color: $lightBlack;
+        }
+
+      }
+    }
+
+    &--purple {
+      background-color: $purple;
+      color: $white;
+    }
+
+    @media (max-width: $tablet) {
+      width: 278px;
+      height: 60px;
+      font-size: 16px;
+
+      &:disabled {
+        width: 340px;
+        max-width: 100%;
+      }
+
+
+    }
+}

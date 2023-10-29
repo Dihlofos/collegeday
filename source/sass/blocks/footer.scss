@@ -1,0 +1,119 @@
+.footer {
+  position: relative;
+  z-index: 5;
+  padding: 0 2rem;
+
+  &__wrapper {
+    color: $black;
+    padding: 5.8rem 0 4rem;
+    background-color: $white;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+  }
+
+  &__top,
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__top {
+    margin: 0 0 6rem;
+  }
+
+  &__bottom {
+    align-items: flex-end;
+  }
+
+  &__title {
+    margin: 0 0 3rem;
+  }
+
+  &__left {
+    max-width: 28.3rem;
+  }
+
+  &__right {
+    width: 47.7rem;
+
+    .footer__link {
+      margin: 0 0 3rem;
+    }
+  }
+
+  &__common {
+    p {
+      font-size: 2.2rem;
+      font-weight: 600;
+      line-height: 1.1;
+      margin: 0 0 1.4rem;
+    }
+  }
+
+  &__link {
+    display: block;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.4;
+    text-decoration: none;
+    color: $black;
+
+    &:hover {
+      color: $purple;
+    }
+  }
+
+  &__subtitle {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 2.8rem 0 3rem;
+  }
+
+  &__info {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.4;
+
+    p {
+      margin: 0 0 1.5rem;
+    }
+
+    ul {
+      color: #7C7C7C;
+      padding: 0 0 0 2rem;
+      list-style: none;
+      margin: 0;
+    }
+
+    li {
+      position: relative;
+      margin: 0 0 1rem;
+
+      &:before {
+        position: absolute;
+        content: '.';
+        top: -0.3rem;
+        left: -1.2rem;
+      }
+    }
+  }
+
+  &__pdf {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.4;
+    text-decoration: none;
+    color: $black;
+  }
+
+
+
+
+
+
+
+}
