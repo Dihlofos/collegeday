@@ -1,15 +1,21 @@
 .partners {
   position: relative;
-  padding: 8.8rem 0 12rem;
+  padding: 2.8rem 0 12rem;
 
   .container {
     position: relative;
   }
 
+  &__title {
+    position: relative;
+    z-index: 5;
+    color: $white;
+    margin: 0 0 8rem;
+  }
 
   &__left-decor {
     position: absolute;
-    top: -16rem;
+    top: 0;
     left: -34rem;
     z-index: 3;
     opacity: 0.5;
