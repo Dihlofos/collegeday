@@ -100,8 +100,8 @@
     @media (max-width: $mobile) {
       display: none;
       top: auto;
-      bottom: 14rem;
-      left: 24rem;
+      bottom: 21rem;
+      left: 22rem;
       font-size: 1.2rem;
       width: 12rem;
       height: 12rem;
@@ -192,9 +192,23 @@
   }
 
   &__slogan {
-    font-size: 1.4rem;
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: 600;
     line-height: 1.4;
+
+    @media (max-width: $mobile) {
+      font-size: 1.7rem;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: 5rem;
+    font-size: 2rem;
+    gap: 1.2rem;
   }
 }
