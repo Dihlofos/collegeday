@@ -24,7 +24,11 @@
 
     @media (max-width: $tablet) {
       width: 237px;
-      height: 234px;
+      height: 375px;
+
+      img {
+        height: 100%;
+      }
     }
   }
 

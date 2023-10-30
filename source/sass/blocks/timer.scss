@@ -6,8 +6,12 @@
   display: inline-flex;
   flex-direction: column;
 
+  @media (max-width: $mobile) {
+    padding: 2.3rem 2.3rem 3rem;
+  }
+
   span {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 1;
     display: block;
@@ -29,24 +33,21 @@
 
   &__item {
     position: relative;
+    width: 5rem;
   }
 
-  // &__item::before {
-  //   content: attr(data-title);
-  //   display: block;
-  //   position: absolute;
-  //   left: 50%;
-  //   bottom: 0;
-  //   transform: translateX(-50%);
-  //   font-size: 1rem;
-  //   font-weight: normal;
-  //   /* color: white; */
-  // }
-  // &__divider {
-  //   width: 1px;
-  //   padding: 0;
-  //   margin: 0;
-  //   opacity: 0.25;
-  //   background-color: white;
-  // }
+  &__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -1.2rem;
+    transform: translateX(-50%);
+    font-size: 1.1rem;
+    font-weight: normal;
+    /* color: white; */
+  }
+  &__divider {
+    margin: 0 0.2rem;
+  }
 }
