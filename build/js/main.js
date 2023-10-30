@@ -153,7 +153,7 @@
   }
 
   // конечная дата
-  const x = new Date("2023-11-13T10:00:00");
+  const x = new Date("2023-11-13T15:30:00");
   // часовой пояс
   // https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   var deadline = changeTimezone(x, "Europe/Moscow");
