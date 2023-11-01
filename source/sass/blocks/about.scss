@@ -194,7 +194,7 @@
   }
 
   &__block-text {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     line-height: 1.4;
     font-weight: 500;
 
@@ -214,6 +214,7 @@
     border: 1px solid $purple;
     font-size: 1.4rem;
     font-weight: 500;
+    opacity: 0;
   }
 
   .button {

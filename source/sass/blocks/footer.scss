@@ -96,11 +96,16 @@
     }
   }
 
+
   &__subtitle {
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 1.1;
     margin: 2.8rem 0 3rem;
+
+    &--social {
+      margin-top: 6rem;
+    }
 
     @media (max-width: $mobile) {
       font-size: 2.2rem;
@@ -158,5 +163,10 @@
       display: block;
       margin: 3rem 0 0;
     }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 2rem;
   }
 }

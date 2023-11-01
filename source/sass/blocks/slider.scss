@@ -67,13 +67,12 @@
   .swiper-slide {
     display: flex;
     justify-content: center;
+
     @media (max-width: $tablet) {
       align-items: flex-start;
       justify-content: flex-start;
     }
-
   }
-
 
   &__headliner {
     position: absolute;
