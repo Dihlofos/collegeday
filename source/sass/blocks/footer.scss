@@ -146,6 +146,7 @@
   }
 
   &__pdf {
+    display: block;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.4;
@@ -154,6 +155,7 @@
     line-height: 1.4;
     text-decoration: none;
     color: $black;
+    margin-top: 3rem;
 
     &:hover {
       color: $purple;
